@@ -1,0 +1,46 @@
+.bicycle{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    right: 0px;
+    animation: moving2 7s infinite linear;
+    transform-origin: center center;
+
+  }
+  .grass{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    right: 0px;
+   
+    transform-origin: center center;
+
+  }
+
+  @keyframes moving2 {
+    0% {
+      left: 0%;
+      transform: rotateY(0deg);
+      transform-origin: left center;
+    }
+    25% {
+      left: 45%;
+      transform: rotateY(90deg);
+      transform-origin: left center;
+    }
+    50% {
+      left: 90%;
+      transform: rotateY(180deg);
+      transform-origin: left center;
+    }
+    75% {
+      left: 45%;
+      transform: rotateY(270deg);
+      transform-origin: left center;
+    }
+    100% {
+      left: 0%;
+      transform: rotateY(360deg);
+      transform-origin: left center;
+    }
+  }

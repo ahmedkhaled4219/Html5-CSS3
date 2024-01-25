@@ -1,0 +1,21 @@
+.two{
+    position: relative;
+}
+.ball{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    right: 0px;
+    animation: moving 3s infinite linear;
+}
+@keyframes moving {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: 90%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
