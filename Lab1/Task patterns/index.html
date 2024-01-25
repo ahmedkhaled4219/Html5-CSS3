@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+form label,
+form input {
+    display: block;
+    margin-bottom: 10px; 
+}
+</style>
+</head>
+
+<body>
+    <form>
+        <h2>Change Email Address</h2>
+        <label for="">User Name</label>
+        <input type="text" placeholder="Enter you username" pattern="[a-zA-Z!@#]{5,10}" title="Enter at least 5 letters and at most 10 letters (!@# are acceptable)" required>        
+        <label for="">Email</label>
+        <input type="Email" placeholder="Enter you Email" pattern="[a-zA-Z0-9]{1,5}@(gmail|yahoo).com" title="Your email should be at least 5 letters @domain.com" required>    
+        <input type="submit">
+    </form>
+    
+    
+
+
+</body>
+</html>

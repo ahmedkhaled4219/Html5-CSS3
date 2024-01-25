@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="red">Red</label>
+    <input  oninput="changeColor()" type="range" id="red" min="0" max="255"   value="0">
+     <label for="green">Green</label>
+    <input oninput="changeColor()" type="range" id="green" min="0" max="255"  value="0">
+     <label for="blue">Blue</label>
+    <input oninput="changeColor()" type="range" id="blue" min="0" max="255"  value="0">
+
+    <p id="paragraph">Change the 3 colors ranges above and observe my color change</p>
+    <script>
+        function changeColor(){
+        var red=document.getElementById("red").value
+        var green=document.getElementById("green").value
+        var blue=document.getElementById("blue").value
+       
+        var coloring=document.getElementById("paragraph")
+        coloring.style.color='rgb('+red+','+green+','+blue+')'
+        }
+       
+
+
+    </script>
+</body>
+</html>

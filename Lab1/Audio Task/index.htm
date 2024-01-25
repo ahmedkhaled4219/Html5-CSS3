@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <main>
+        <div class="img">
+           <img src="images/1.jpg" alt="">
+        </div>
+        
+        <div class="myaudio">
+            <audio  loop autoplay controls><source src="resources/1.mp3"/></audio>
+             <div class="buttons">
+                <button id="play" >play</button>
+                <button id="pause">pause</button>
+                <button id="stop">stop</button>
+                <button id="mute">muted</button>
+             </div>
+            <div class="ranges">
+                  <div class="range">
+                    <label for="volume">Volume:</label>
+                    <input type="range" min="0" max="1"  step=".1" id="volume" value="1"/>
+                  </div>
+                  <div class="range">
+                    <label for="duration">Duration:</label>
+                    <input type="range" min="0" max="" id="duration" value="0"/>
+                  </div>
+                  <div class="range">
+                    <label for="rate">Speed:</label>
+                    <input type="range" min=".5" max="2" id="rate" value="1" step=".1"/>
+                  </div>
+            </div>
+            <div class="songs">
+                <button id="first">La Tabky</button>
+                <button id="second">Fe Youmen</button>
+                <button id="third">Anty El Aman</button>
+                <button id="fourth">Holmna Nahar</button>
+            </div>          
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

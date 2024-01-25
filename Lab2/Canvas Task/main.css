@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+canvas {
+    background-color: cadetblue;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}

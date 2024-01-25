@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        progress{
+            appearance: none;
+        }
+        progress::-webkit-progress-bar{
+            background-color: antiquewhite;
+            box-shadow: 0 0 3px red inset;
+        }
+        progress::-webkit-progress-value{
+            background-color: darkgoldenrod;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="range" id="range" min="2" max="10" step="2" value="2">
+    <output id="rangeValue">2</output>
+    <br>
+    <meter min="0" max="10" low="2" high="6" optimum="9"></meter>
+    <output id="meterPercentage">0%</output>
+    
+    <script>
+            var rangeInput = document.getElementById('range');
+            var rangeValueOutput = document.getElementById('rangeValue');
+            var meterPercentageOutput = document.getElementById('meterPercentage');
+
+            rangeValueOutput.textContent = rangeInput.value;
+            rangeInput.addEventListener('input', function () {
+            rangeValueOutput.textContent = rangeInput.value;
+         
+        var p=document.getElementsByTagName('meter')[0];
+        var count=0;
+        function countProgress(){
+          if(count<=10){
+            p.value=count;
+            meterPercentageOutput.textContent = count*10 + '%';
+            count++;
+          }
+          setTimeout(countProgress,500);
+        }
+        countProgress();
+         
+            });
+        
+    </script>
+</body>
+</html>
